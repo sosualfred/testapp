@@ -1,5 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -14,10 +14,8 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text('Home'),
-            Container(
-              child: CircularProgressIndicator.adaptive(),
-            ),
+            Text('Home Waakey'),
+            SvgPicture.asset('assets/images/meditation.svg'),
           ],
         ),
       ),
